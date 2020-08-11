@@ -1,11 +1,13 @@
-\documentclass[11pt,a4paper]{jsarticle}
-%
+\documentclass[10pt,a4paper]{jsarticle}
 \usepackage{bm}
 \usepackage{graphicx}
-%
+\usepackage[truedimen,left=25truemm,right=25truemm,top=25truemm,bottom=25truemm]{geometry}
 \usepackage{jpdoc}
 
+\def\title{株式会社科学計算総合研究所 就業規則}
 
+\newcounter{NumOfMembers}\setcounter{NumOfMembers}{1}
+\newcounter{DocumentsPerMember}\setcounter{DocumentsPerMember}{1}
 \def\Name#1{\ifcase#1\or
 株式会社科学計算総合研究所\or%甲
 \else\fi}
@@ -22,13 +24,10 @@
 0\or%甲
 0\else0\fi}
 
-\newcounter{NumOfMembers}\setcounter{NumOfMembers}{1}
-\newcounter{DocumentsPerMember}\setcounter{DocumentsPerMember}{1}
-
 \begin{document}
-\title{株式会社科学計算総合研究所\\就業規則}
-\date{}
-\maketitle
+\newpage
+{\centering \Large\bf \title  \vskip 0em}
+\vskip 2em
 \section{就業規則}
 \subsection{総則}
 \article{目的}
@@ -702,7 +701,7 @@
 会社は、裁量労働適用者の労働状況、健康・福祉のために講じた措置、苦情処理について講じたい措置の記録を、本協定有効期間中及び有効期間満了後３年間保存する。
 
 \begin{flushleft}\
-平成31年1月25日\\
+\today\\
 \vspace{10pt}
 上記は当会社の現行就業規則と相違ない。\\
 \vspace{10pt}
